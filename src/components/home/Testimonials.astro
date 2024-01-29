@@ -1,0 +1,126 @@
+---
+import { Image } from "astro:assets";
+import imagFace1 from "@assets/imgFace-1.avif"
+import imagFace2 from "@assets/imgFace-2.avif"
+import imagFace3 from "@assets/imgFace-3.avif"
+---
+
+<section class="bg-white">
+    <div class="container px-6 py-10 mx-auto">
+        <p
+            class="text-2xl font-semibold text-center capitalize text-primary lg:text-3xl"
+        >
+            Hear from our <span class="text-accent-focus"> satisfied</span> customers!
+        </p>
+
+        <p class="max-w-2xl mx-auto mt-6 text-center text-black">
+            At Innovative Roofing Systems Canada, we pride ourselves on
+            providing top-quality roofing services and exceptional customer
+            service. But don't just take our word for it - hear from some of our
+            satisfied customers! Check out these testimonials to see what our
+            clients have to say about their experience working with us. From
+            roof repairs to full replacements, we are committed to exceeding
+            your expectations and ensuring your complete satisfaction.
+        </p>
+
+        <section
+            class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 lg:grid-cols-2 xl:grid-cols-3"
+        >
+            <div class="p-8 border rounded-lg">
+                <p class="leading-loose text-black">
+                    “I had a leaky roof that was causing damage to my home, and
+                    Terry and his team came to the rescue. They were able to
+                    quickly identify the problem and provide me with a detailed
+                    estimate for the repair. The work was completed on time and
+                    within budget, and my roof has been leak-free ever since.
+                    Terry's professionalism and attention to detail were truly
+                    impressive, and I would not hesitate to recommend Innovative
+                    Roofing Systems Canada to anyone in need of roofing
+                    repairs”.
+                </p>
+
+                <div class="flex items-center mt-8 -mx-2">
+                    <Image
+                        class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300"
+                        src={imagFace1}
+                        alt="a customer named Robert"
+                        width={56}
+                        height={56}
+                        format="webp"
+                    />
+
+                    <div class="mx-2">
+                        <p class="font-semibold text-primary text-md">
+                            Robert Greene
+                        </p>
+                        <span class="text-sm text-secondary">From: Google</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 border rounded-lg">
+                <p class="leading-loose text-black">
+                    “Terry and his team at Innovative Roofing Systems Canada
+                    recently completed a roof replacement on my home, and I am
+                    beyond impressed with their work. They used top-quality
+                    materials and their attention to detail was evident in every
+                    aspect of the installation process. Terry was also very
+                    communicative throughout the project, providing me with
+                    regular updates and answering any questions I had. I would
+                    definitely recommend Innovative Roofing Systems Canada to
+                    anyone looking for a reliable, skilled, and trustworthy
+                    roofing company.”.
+                </p>
+
+                <div class="flex items-center mt-8 -mx-2">
+                    <Image
+                        class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300"
+                        src={imagFace2}
+                        alt="customer named Jennifer"
+                        width={56}
+                        height={56}
+                        format="webp"
+                    />
+
+                    <div class="mx-2">
+                        <p class="font-semibold text-primary text-md">
+                            Jennifer Sanders
+                        </p>
+                        <span class="text-sm text-secondary">From: Homstars</span
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 border rounded-lg">
+                <p class="leading-loose text-black">
+                    “I recently had my roof replaced by Terry and the team at
+                    Innovative Roofing Systems Canada, and I couldn't be happier
+                    with the results. From start to finish, they were
+                    professional, knowledgeable, and efficient. Terry took the
+                    time to explain all of my options and helped me choose the
+                    best roofing materials for my home. The installation process
+                    was quick and seamless, and my new roof looks amazing! I
+                    would highly recommend Innovative Roofing Systems Canada to
+                    anyone in need of roofing services”.
+                </p>
+
+                <div class="flex items-center mt-8 -mx-2">
+                    <Image
+                        class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-300"
+                        src={imagFace3}
+                        alt="customer named Emma"
+                        width={56}
+                        height={56}
+                        format="webp"
+                    />
+
+                    <div class="mx-2">
+                        <p class="font-semibold text-primary text-md">Emma Cooper</p>
+                        <span class="text-sm text-secondary">From: Google</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>

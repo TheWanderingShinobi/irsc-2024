@@ -1,0 +1,24 @@
+---
+// component import
+import MainHead from "@components/BaseHead.astro";
+import Footer from "@components/Footer.astro";
+import Nav from "@components/Nav.astro";
+// style import
+
+const {
+  title = "Innovative Roofing Systems Canada",
+  description = "Quality,Integrity, and reliability are some of the core values that Innovative roofing systems Canada stands by.",
+} = Astro.props;
+---
+
+<html data-theme="fantasy" lang="en">
+  <MainHead {title} {description} />
+  <body class="font-Nunito">
+    <Nav />
+    <main>
+      <slot> Default Text</slot>
+    </main>
+    <Footer />
+    <script src="/src/app.js"></script>
+  </body>
+</html>
